@@ -1,0 +1,40 @@
+.ItemNews-white {
+    @include verticalAlignment;
+    max-width: 640px;
+    max-height: 561px;
+    margin-bottom: 60px;
+
+    font-family: $font;
+}
+
+.ItemNews-white-Img {
+    height: fit-content;
+    margin-bottom: 20px
+}
+
+.ItemNews-white-Data {
+    @include horizontalAlignment;
+    gap: 3px;
+}
+
+.ItemNews-white-Data p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.ItemNews-white-DataPublication {
+    color: $colorTextGrey;
+}
+
+.ItemNews-white-Title {
+    margin: 10px auto;
+    @include fontTitle;
+
+    color: $colorTitleDark;
+}
+
+.ItemNews-white-Text {
+    @include fontTextNews;
+    color: $colorTextGrey;
+}

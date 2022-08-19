@@ -1,0 +1,22 @@
+.Main-NewsContainer {
+    @include verticalAlignment;
+    margin-top: 40px;
+    padding-left: $paddingLeft;
+    padding-right: $paddingRight;
+}
+.Main-NewsContainer-Title {
+    font-family: $font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    
+    letter-spacing: 0.05em;
+}
+
+.Main-NewsContainer-List {
+    @include horizontalAlignment;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+

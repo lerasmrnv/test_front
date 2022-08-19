@@ -5,6 +5,10 @@ $width-desktop: '(min-width: 769px)';
 
 $font: 'Roboto Flex', sans-serif;
 
+$colorTitleDark: #1F1F1F;
+$colorTextWhite: #FFFFFF;
+$colorTextGrey: #828282;
+
 
 $marginPage: auto 300px;
 $paddingLeft: 300px;
@@ -18,6 +22,21 @@ $paddingRight: 300px;
 @mixin verticalAlignment {
     display: flex;
     flex-direction: column;
+}
+
+@mixin fontTitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+
+    letter-spacing: -0.01em;
+}
+
+@mixin fontTextNews {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
 }
 
 // $backgroundMainColor: #DCE5E2;

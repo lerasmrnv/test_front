@@ -38,6 +38,7 @@
 
 .Header-PageTitle {
     @include verticalAlignment;
+    align-items: center;
 }
 
 .Header-PageTitle p {

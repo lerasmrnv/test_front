@@ -1,4 +1,11 @@
 @import "../commonStyles/variables.scss";
+
+// Стили Header
 @import "../components/header/Header.scss";
 @import "../components/header/Aside.scss";
 @import "../components/header/Menu.scss";
+
+// Стили Main
+@import "../components/main/Main.scss";
+@import "../components/main/News/ItemNewsWhite.scss";
+@import "../components/main/News/ItemNewsDark.scss";
