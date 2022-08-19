@@ -42,15 +42,10 @@
 }
 
 .Header-PageTitle p {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-
-    letter-spacing: 0.05em;
+    @include fontBannerText;
+    margin-bottom: 13px;
 }
 
 .Header-PageTitle h1 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 45px;
+    @include fontBannerTitle;
 }

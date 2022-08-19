@@ -1,0 +1,20 @@
+.BannerFirst {
+    @include verticalAlignment;
+    align-items: center;
+    justify-content: center;
+    height: 536px;
+    
+    background-image:url('../../../images/main/bannerfirst/background.png');
+    background-size: cover;
+    font-family: $font;
+    color: $colorTextWhite;
+}
+
+.BannerFirst p {
+    @include fontBannerText;
+    margin-bottom: 13px;
+}
+
+.BannerFirst h3 {
+    @include fontBannerTitle;
+}

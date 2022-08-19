@@ -1,0 +1,51 @@
+.Quotes {
+    @include verticalAlignment;
+    max-width: 300px;
+    
+
+    text-align: center;
+    font-family: $font;
+}
+
+.Quotes-Img {
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.Quotes-ImgFrame {
+    place-self: flex-start;
+    position: relative;
+    left: 75px;
+    z-index: 1000;
+}
+.Quotes-ImgPhoto {
+    margin: 0 auto;
+    position: relative;
+    right: 15px;
+}
+
+.Quotes-Title {
+    margin-bottom: 6px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.Quotes-Post {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.Quotes-Text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: $colorTextGrey;
+}

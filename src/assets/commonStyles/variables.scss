@@ -39,6 +39,21 @@ $paddingRight: 300px;
     line-height: 20px;
 }
 
+@mixin fontBannerTitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+@mixin fontBannerText {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
 // $backgroundMainColor: #DCE5E2;
 // $backgroundColorPage :#F5F5F5;
 // $backgroundColorCard :#eaebec;
