@@ -1,0 +1,31 @@
+$width-mobile: '(max-width: 320px)';
+$width-tablet: '(min-width: 321px) and (max-width: 768px)';
+$width-desktop: '(min-width: 769px)';
+
+
+$font: 'Roboto Flex', sans-serif;
+
+
+$marginPage: auto 300px;
+$paddingLeft: 300px;
+$paddingRight: 300px;
+
+@mixin horizontalAlignment {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin verticalAlignment {
+    display: flex;
+    flex-direction: column;
+}
+
+// $backgroundMainColor: #DCE5E2;
+// $backgroundColorPage :#F5F5F5;
+// $backgroundColorCard :#eaebec;
+// $backgroundColorFooter: #ededed;
+// $colorLineFooter: #cecece;
+
+
+// $heightMain: 550px;
+
