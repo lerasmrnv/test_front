@@ -1,0 +1,28 @@
+
+
+@media #{$width-desktop} { 
+    .SocialContainer {
+        @include horizontalAlignment;
+    justify-content: center;
+        margin: 60px auto;
+    
+        gap: 40px;
+    }
+}
+
+@media #{$width-tablet} { 
+    .SocialContainer {
+        @include horizontalAlignment;
+    justify-content: center;
+        margin: 40px auto;
+        gap: 20px;
+    }
+}
+
+@media #{$width-mobile} { 
+    .SocialContainer {
+        @include verticalAlignment;
+        margin: 40px auto;
+        gap: 20px;
+    }
+}

@@ -8,6 +8,7 @@ $font: 'Roboto Flex', sans-serif;
 $colorTitleDark: #1F1F1F;
 $colorTextWhite: #FFFFFF;
 $colorTextGrey: #828282;
+$colorBackgroundRed: #F01B0D;
 
 
 $marginPage: auto 300px;
@@ -33,6 +34,7 @@ $paddingRight: 300px;
     letter-spacing: -0.01em;
 }
 
+
 @mixin fontTextNews {
     font-weight: 300;
     font-size: 20px;
@@ -45,6 +47,7 @@ $paddingRight: 300px;
     line-height: 45px;
 }
 
+
 @mixin fontBannerText {
     font-weight: 400;
     font-size: 12px;
@@ -53,13 +56,3 @@ $paddingRight: 300px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
-
-// $backgroundMainColor: #DCE5E2;
-// $backgroundColorPage :#F5F5F5;
-// $backgroundColorCard :#eaebec;
-// $backgroundColorFooter: #ededed;
-// $colorLineFooter: #cecece;
-
-
-// $heightMain: 550px;
-

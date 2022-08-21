@@ -7,7 +7,24 @@
 
 // Стили Main
 @import "../components/main/Main.scss";
+
 @import "../components/main/News/ItemNewsWhite.scss";
 @import "../components/main/News/ItemNewsDark.scss";
 @import '../components/main/Quotes/Quotes.scss';
-@import "../components/main/BannerFirst/BannerFirst.scss";
+
+@import "../components/main/Banner/BannerFirst.scss";
+@import "../components/main/Banner/BannerSecond.scss";
+
+@import "../components/main/Social/Social.scss";
+@import "../components/main/Social/Network.scss";
+@import "../components/main/Social/Follow.scss";
+
+// Стили Footer
+@import "../components/footer/Footer.scss";
+@import "../components/footer/FooterNav.scss";
+@import "../components/footer/FooterSocial.scss";
+@import "../components/footer/FooterCopyright.scss";
+
+.App {
+    max-width: 100vw;
+}

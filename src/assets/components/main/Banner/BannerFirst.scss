@@ -1,0 +1,60 @@
+.BannerFirst {
+    @include verticalAlignment;
+    align-items: center;
+    justify-content: center;
+    
+    background-size: cover;
+    font-family: $font;
+    color: $colorTextWhite;
+}
+
+.BannerFirst p {
+    @include fontBannerText;
+    margin-bottom: 13px;
+}
+
+.BannerFirst h3 {
+    @include fontBannerTitle;
+}
+
+@media #{$width-desktop} { 
+    .BannerFirst {
+        height: 536px;
+        background-image:url('../../../images/main/bannerfirst/background.png');
+        div {
+            max-width: 570px;
+        }
+    }
+}
+
+@media #{$width-tablet} { 
+    .BannerFirst {
+        height: 276px;
+        background-image:url('../../../images/main/bannerfirst/background.png');
+        div {
+            max-width: 570px;
+        }
+    }
+}
+
+@media #{$width-mobile} { 
+    .BannerFirst {
+        height: 276px;
+        background-image:url('../../../images/main/bannerfirst/backgroundMobile.png');
+        h3 {
+            max-width: 228px;
+
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+        }
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.04em;
+        }
+    }
+}

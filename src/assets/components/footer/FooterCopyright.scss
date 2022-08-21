@@ -1,0 +1,48 @@
+.FooterCopyright {   
+    p {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    div {
+        @include horizontalAlignment;
+
+        p {
+            padding-left: 10px;
+            
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+}
+
+@media #{$width-desktop} { 
+    .FooterCopyright {
+        @include horizontalAlignment;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+}
+
+@media #{$width-tablet} { 
+    .FooterCopyright {
+        @include horizontalAlignment;
+        justify-content: space-between;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 50px;
+    }
+}
+
+@media #{$width-mobile} { 
+    .FooterCopyright {
+        @include verticalAlignment;
+        align-items: center;
+        gap: 14px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 50px;
+    }
+}

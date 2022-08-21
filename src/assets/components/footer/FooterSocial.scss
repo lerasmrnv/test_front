@@ -1,0 +1,30 @@
+.FooterSocial-List {
+    @include horizontalAlignment;
+    justify-content: center;
+
+    gap: 24px;
+
+    list-style-type: none;
+}
+
+@media #{$width-desktop} { 
+    .FooterSocial-List {
+        margin-top: 50px;
+    }
+}
+
+@media #{$width-tablet} { 
+    .FooterSocial-List {
+        margin-top: 49px;
+    }
+}
+
+@media #{$width-mobile} { 
+    .FooterSocial-List {
+        padding: 0 20px;
+
+        margin-top: 49px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}   

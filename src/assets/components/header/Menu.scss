@@ -1,0 +1,312 @@
+.MenuContainer {
+    @include verticalAlignment;
+    padding-top: 20px;
+
+    width: 100vw;
+    height: max-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #F01B0D;
+
+    font-family: $font;
+
+    transform: translateX(1000%);
+    transition: all 0.2s;
+}
+.MenuContainer.active {
+    transform: translateX(0); 
+}
+
+.MenuContainer-Logo {
+    @include horizontalAlignment;
+    justify-content: space-between;
+    margin: auto 50px;
+    align-items: center;
+    div {
+        cursor: pointer;
+    }
+    img {
+        height: fit-content;
+    }
+}
+
+.MenuContainer-AllList {
+    @include horizontalAlignment;
+    justify-content: center;
+    margin-top: 88px;
+    gap: 40px;
+}
+
+.MenuContainer-List, 
+.MenuContainer-ListSports,
+.MenuContainer-Feedback {
+    @include verticalAlignment;
+
+    list-style-type: none;
+    
+}
+
+.MenuContainer-List {
+    gap: 32px;
+    li {
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            color: $colorTextWhite;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.MenuContainer-ListSports {
+    gap: 14px; 
+        li {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+        }
+}
+
+.MenuContainer-Feedback {
+    gap: 24px;
+    a {
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+}
+
+.MenuSocial-List {
+    @include horizontalAlignment;
+    justify-content: center;
+    margin-top: 100px;
+
+    gap: 24px;
+
+    list-style-type: none;
+}
+
+.Menu-Networks {
+    @include horizontalAlignment;
+    justify-content: space-around;
+    margin-top: 78px;
+}
+
+.MenuAdvertisement {
+    gap: 16px;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+    opacity: 0.7;
+}
+.MenuFollowContainer {
+    p {   
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+.MenuFollowContainer-Form {
+    @include horizontalAlignment;
+    padding-bottom: 32px;
+}
+.MenuForm-InoutEmail {
+    width: 300px;
+    height: 22px;
+    padding-top: 14px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $colorTextWhite;
+    
+    &:active, &:hover, &:focus {
+        outline: 0;
+        outline-offset: 0;
+    }
+    &::placeholder { 
+        color: white;
+        opacity: 1; 
+    }
+    
+}
+
+.MenuForm-InoutSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 201px;
+    height: 40px;
+
+    border-radius: 100px;
+    border: none;
+
+    background-color: white;
+    color: #C0160A;
+
+    &:hover {
+        box-shadow: 0px 1px 8px rgba(211, 211, 211, 0.688);
+    }
+}
+
+@media #{$width-tablet} {
+    .MenuSocial-List {
+        @include horizontalAlignment;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto 15px;
+        margin-top: 50px;
+    
+        gap: 24px;
+    }
+
+    .Menu-Networks {
+        margin-top: 25px;
+    }
+    
+    .MenuAdvertisement {
+        gap: 16px;
+
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .MenuFollowContainer-Form {
+        @include verticalAlignment;
+        gap: 10px;
+    }
+
+    .MenuFollowContainer {
+        p {   
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    .MenuForm-InoutEmail {
+        width: 150px;
+        padding-top: 10px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
+@media #{$width-mobile} {
+    .MenuSocial-List {
+        @include horizontalAlignment;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin: auto 5px;
+        margin-top: 25px;
+    
+        gap: 18px;
+    }
+
+    .Menu-Networks {
+        @include verticalAlignment;
+
+        align-items: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    
+    .MenuAdvertisement {
+        gap: 16px;
+
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .MenuFollowContainer-Form {
+        @include verticalAlignment;
+        gap: 10px;
+    }
+
+    .MenuFollowContainer {
+        p { 
+            padding-top: 10px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    .MenuForm-InoutEmail {
+        width: 200px;
+        padding-top: 5px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .MenuContainer-AllList {
+        margin: auto 10px;
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .MenuContainer-List {
+        gap: 10px;
+        li {
+            a {
+                cursor: pointer;
+                text-decoration: none;
+                color: $colorTextWhite;
+                font-style: normal;
+                font-weight: 250;
+                font-size: 12px;
+                line-height: 14px;
+    
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+            }
+        }
+    }
+    
+    .MenuContainer-ListSports {
+        gap: 14px; 
+            li {
+                font-style: normal;
+                font-weight: 250;
+                font-size: 12px;
+                line-height: 12px;
+            }
+    }
+    
+    .MenuContainer-Feedback {
+        gap: 14px;
+        a {
+            cursor: pointer;
+            font-style: normal;
+            font-weight: 250;
+            font-size: 12px;
+            line-height: 14px;
+    
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+    }
+}

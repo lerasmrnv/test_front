@@ -1,11 +1,9 @@
 .Main-NewsContainer {
     @include verticalAlignment;
     margin-top: 40px;
-    padding-left: $paddingLeft;
-    padding-right: $paddingRight;
 }
 
-.Main-NewsContainer-Title {
+.NewsContainer-Title {
     font-family: $font;
     font-weight: 400;
     font-size: 18px;
@@ -14,16 +12,99 @@
     letter-spacing: 0.05em;
 }
 
-.Main-NewsContainer-List {
+.Main-QuotesContainer {
     @include horizontalAlignment;
-    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.NewsContainer-List {
     justify-content: space-between;
     margin-top: 24px;
 }
 
-.Main-QuotesContainer {
-    @include horizontalAlignment;
-    justify-content: space-between;
-    margin-top: 60px;
-    margin-bottom: 60px;
+@media #{$width-desktop} { 
+    .Main-NewsContainer {
+        max-width: 1320px;
+        min-width: 769px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .NewsContainer-List {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .Main-QuotesContainer {
+        @include horizontalAlignment;
+        justify-content: space-between;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .Main-QuotesContainer-Mobile {
+        display: none;
+    }
 }
+
+@media #{$width-tablet} {   
+.Main-NewsContainer {
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Main-QuotesContainer {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Main-QuotesContainer-Mobile {
+    display: none;
+}
+}
+
+@media #{$width-mobile} { 
+    .NewsContainer-List {
+        @include verticalAlignment;
+    }
+    .NewsContainer-Title {
+        padding-left: 15px;
+    }
+    
+    .Main-QuotesContainer {
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .Main-QuotesContainer-disktopTablet {
+        display: none;
+    }
+    }
+
+    @media (min-width: 321px) and (max-width: 600px) {
+        .NewsContainer-List {
+            @include verticalAlignment;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+
+    @media (min-width: 601px) and (max-width: 768px) {
+        .NewsContainer-List {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+            gap: 30px;
+        }
+    }

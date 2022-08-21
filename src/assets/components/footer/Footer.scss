@@ -1,0 +1,17 @@
+.Footer {
+    @include verticalAlignment;
+    height: 256px;
+    
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #F01B0D;
+
+    font-family: $font;
+
+    color: $colorTextWhite;
+} 
+
+@media #{$width-mobile} { 
+    .Footer {
+        min-height: 504px;
+        padding-bottom: 24px;
+    }
+}

@@ -1,7 +1,5 @@
 .Header-ListSports {
     @include horizontalAlignment;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 60px;
 
@@ -15,4 +13,35 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+}
+
+@media #{$width-desktop} {
+    .Header-ListSports {
+        
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media #{$width-tablet} {
+    .Header-ListSports {
+        max-width: 100%;
+        align-items: center;
+        white-space: nowrap;
+        
+    }
+    .Header-ItemSport {
+        padding-left: 10px;
+    }
+}
+
+@media #{$width-mobile} {
+    .Header-ListSports {
+        max-width: 100%;
+        align-items: center;
+        white-space: nowrap;
+    }
+    .Header-ItemSport {
+        padding-left: 15px;
+    }
 }
