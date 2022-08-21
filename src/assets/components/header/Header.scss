@@ -22,6 +22,10 @@
     a {
         text-decoration: none;
         color: $colorTextWhite;
+        
+        &:hover {
+            color: #b5180d;
+        }
     }
 }
 

@@ -28,6 +28,14 @@
         line-height: 16px;
     }
 }
+
+.FooterNav-Link {
+    cursor: pointer;
+    &:hover {
+        color: #67120c;
+    }
+}
+
 @media #{$width-mobile} { 
     .FooterNav-List {
         @include verticalAlignment;

@@ -17,10 +17,13 @@
     align-items: center;
     height: 180px;
     background-color: $colorBackgroundRed;
+
 }
 
 @media #{$width-desktop} { 
     .NetworkContainer-Link {
+        flex-wrap: wrap;
+        align-content: center;
         gap: 30px;
         max-width: 680px;
     }
