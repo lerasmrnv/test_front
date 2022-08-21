@@ -1,5 +1,5 @@
 import React from 'react';
-import sports from '../sports';
+import sports from '../../constants/sports';
 
 
 export default function Aside() {

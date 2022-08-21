@@ -1,6 +1,7 @@
 .ItemNews-dark {
     @include verticalAlignment;
     justify-content: flex-end;
+    padding: 5px;
 
     background-image:linear-gradient(0deg, #202020 11.39%, rgba(57, 57, 57, 0.36) 119.3%),
     url('https://2.downloader.disk.yandex.by/preview/7891f94277d680a655a73a05584d35a790fe62c4871aa75588483ffe5a9b568a/inf/eRnqNqmvn2xnd_k4SPs8fmsJnawGZbM4kJUKC6OY2-6EzNw5eEcjFHmM4-LgTb5M6X89uslulyp1o_pqO7s5LA%3D%3D?uid=418637868&filename=news3.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=418637868&tknv=v2&size=1898x860');

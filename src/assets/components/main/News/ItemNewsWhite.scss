@@ -1,5 +1,6 @@
 .ItemNews-white {
     @include verticalAlignment;
+    padding: 5px;
 
     font-family: $font;
     &:hover {

@@ -5,7 +5,7 @@ export default function FooterNav() {
     return (
         <div className='FooterNav'>
             <ul className='FooterNav-List'>
-                <li className='FooterNav-Item'><a className='FooterNav-Link'><img src={logoWhite} /></a></li>
+                <li className='FooterNav-Item'><a className='FooterNav-Link'><img src={logoWhite} alt='logo' /></a></li>
                 <li className='FooterNav-Item'><a className='FooterNav-Link'>о проекте</a></li>
                 <li className='FooterNav-Item'><a className='FooterNav-Link'>обратная связь</a></li>
                 <li className='FooterNav-Item'>

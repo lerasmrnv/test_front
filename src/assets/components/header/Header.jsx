@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import logo from '../../images/header/logo.png';
 import vk from '../../images/footer/vk.png';
 import facebook from '../../images/footer/facebook.png';
@@ -12,16 +13,16 @@ import Aside from './Aside';
 
 import logoWhite from '../../images/header/logoWhite.png';
 import close from '../../images/header/Close.png';
-import navItems from '../navItems';
-import sports from '../sports';
+import navItems from '../../constants/navItems';
+import sports from '../../constants/sports';
 
 
 
 export default function Header() {
     const [menuActive, setMenuActive] = useState(false);
 
-    const handleChange = () => {
-        setMenuActive(!menuActive);
+    const toggleChange = () => {
+        setMenuActive(prev => !prev);
     }
 
     return (
@@ -32,27 +33,27 @@ export default function Header() {
                     <ul className='Header-List'>
                         {navItems.map(item =>
                             <li className='Header-Item'>
-                                <a href={item.href}>{item.value}</a>
+                                <a key={item.id} href={item.href}>{item.value}</a>
                             </li>
                         )}
-                        <div onClick={handleChange} className='Heder-Menu-desktop MenuBtn'>
+                        <div onClick={toggleChange} className='Heder-Menu-desktop MenuBtn'>
 
                         </div>
                     </ul>
-                    <div onClick={handleChange} className='Header-Menu-tabletMobile MenuBtn' >
+                    <div onClick={toggleChange} className='Header-Menu-tabletMobile MenuBtn' >
                     </div>
                 </nav>
             </div>
             <div className={'MenuContainer' + (menuActive ? ' active' : '')} >
                 <div className='MenuContainer-Logo'>
-                    <img src={logoWhite} />
-                    <div onClick={handleChange}  ><img src={close} /></div>
+                    <img src={logoWhite} alt='logo' />
+                    <div onClick={toggleChange}  ><img src={close} /></div>
                 </div>
                 <div className='MenuContainer-AllList'>
                     <ul className='MenuContainer-List'>
                         {navItems.map(item =>
                             <li className='MenuContainer-Item'>
-                                <a href={item.href}>{item.value}</a>
+                                <a key={item.id} href={item.href}>{item.value}</a>
                             </li>
                         )}
                     </ul>

@@ -3,7 +3,7 @@ import React from 'react'
 export default function ItemNewsWhite(props) {
     return (
         <div className='ItemNews-white'>
-            <img src={props.img} className='ItemNews-white-Img' />
+            <img src={props.img} className='ItemNews-white-Img' alt='img' />
             <div className='ItemNews-white-Data' >
                 <p className='ItemNews-white-DataPublication'>{props.data}</p>
                 <p>|</p>
